@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Digital Resume</title>
+    <style background-color="yellow">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-image: url(bgm1.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        header, footer {
+            background-color: #ffffff56;
+            color:black;
+            padding: 10px 20px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #7bd5fc5e;
+        }
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            font-size: 90%;
+        }
+        blockquote {
+            border-left: 5px solid #eee;
+            padding-left: 10px;
+            color: #666;
+        }
+        #byname{
+            text-align: right;
+        }
+        #copy{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img align="right" src="photo1.jpg" width="100" height="140">
+            <h1>MOHAMMED SHAKEEN SResume</h1>
+            <address>
+                Email: <a href="mailto:cse205@hicet.ac.in">cse205@hicet.ac.in</a><br>
+                Phone: 9894326597<br>
+                <a href="https://www.linkedin.com/in S MOHAMMED SHAKEEN S" target="_blank">LinkedIn</a> | <a href="https://github.com/Mohammedshakeens" target="_blank">GitHub</a>
+            </address>
+        </header>
+
+        <nav>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+        </nav>
+
+        <main>
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <p>1OTH in Sri Ramakrishna Matric Hr Sec School, Perambalur - Scored 90%</p>
+                <p>11,12TH in Sri Ramakrishna Matric Hr Sec School, Perambalur - Scored 93%</p>
+                <p>Hindusthan College Of Engineering And Technology, coimbatore - 9.2 CGPA</p>
+            </section>
+
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Python, Java</li>
+                    <li>web development</li>
+                </ul>
+                <ol>
+                    <li>Problem-solving</li>
+                    <li>Team collaboration</li>
+                    <li>Project management</li>
+                </ol>
+                <dl>
+                    <dt><b>Programming Languages :</b></dt>
+                    <dd>Python, Java</dd>
+                    <dt><b>Web Technologies :</b></dt>
+                    <dd>MERN - ReactJs, NodeJs, ExpressJs, MongoDB</dd>
+                </dl>
+            </section>
+
+            <section id="experience" class="section">
+                <h2>Work Experience</h2>
+                <table>
+                        <tr>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Duration</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Zoho</td>
+                        <td>Software Developer</td>
+                        <td>2021-Present</td>
+                        <td>Conducted analysis and testing on user experiences to assess usability and make changes based on user feedback.</td>
+                    </tr>
+                    <tr>
+                        <td>Airtel</td>
+                        <td>Telecom</td>
+                        <td>2020-2021</td>
+                        <td>Assisted in maintaining and developing communication networks, providing support for telecom services.</td>
+                    </tr>
+                    <tr>
+                        <td>AR Tech</td>
+                        <td>Information Technology</td>
+                        <td>2017-2020</td>
+                        <td>Built and maintained communication networks for corporate infrastructure, ensuring system reliability.</td>
+                    </tr>  
+                </table>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <details>
+                    <summary>Project 1: Web Application</summary>
+                    <p>Developed a full-stack web application using React and Node.js</p>
+                </details>
+                <details>
+                    <summary>Project 2: Machine Learning</summary>
+                    <p>Created machine learning models to predict stock prices using Python.</p>
+                </details>
+            </section>
+
+            <section id="certifications" class="section">
+                <h2>Certifications</h2>
+                <p>Mastering MERN - Udemy</p>
+                <p>Data Structures and Algorithms - Coursera</p>
+            </section>
+
+            <section class="section">
+                <h2>References</h2>
+                <blockquote>
+                    "MOHAMMED SHAKEEN Sis a highly skilled developer with a keen eye for detail. His contributions to our projects have been valuable."
+                    <p id="byname">- MOHAMMED SHAKEEN S, Ar Tech</p>
+                </blockquote>
+            </section>
+        </main>
+        <footer>
+            <p id="copy">© 2024 MOHAMMED SHAKEEN S</p>
+        </footer>
+    </div>
+</body>
+</html>
