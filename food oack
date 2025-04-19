@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RipePack</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #333;
+    }
+    header {
+      background-color: #f8f8f8;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #000;
+    }
+    section {
+      padding: 40px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .pack-list, .recommendation-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .pack, .recommendation {
+      flex: 1 1 30%;
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    .pack:hover, .recommendation:hover {
+      transform: scale(1.03);
+      background-color: #f0f8ff;
+    }
+    .recommendation img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RipePack</h1>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="packs">
+    <h2>Our Packs</h2>
+    <div class="pack-list">
+      <div class="pack" onclick="showAlert('Happy Mood Pack')">Happy Mood Pack</div>
+      <div class="pack" onclick="showAlert('Gut Health Pack')">Gut Health Pack</div>
+      <div class="pack" onclick="showAlert('PCOS Wellness Pack')">PCOS Wellness Pack</div>
+    </div>
+  </section>
+
+  <section class="recommendations">
+    <h2>Tailored Seasonal Recommendations</h2>
+    <div class="recommendation-list">
+      <div class="recommendation" onclick="showAlert('Chocolate Delight')">
+        <img src="https://via.placeholder.com/300x200?text=Chocolate+Delight" alt="Chocolate Delight">
+      </div>
+      <div class="recommendation" onclick="showAlert('Winter Warmer')">
+        <img src="https://via.placeholder.com/300x200?text=Winter+Warmer" alt="Winter Warmer">
+      </div>
+      <div class="recommendation" onclick="showAlert('Fruit Fusion')">
+        <img src="https://via.placeholder.com/300x200?text=Fruit+Fusion" alt="Fruit Fusion">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showAlert(packName) {
+      alert("You clicked on: " + packName);
+    }
+  </script>
+
+</body>
+</html>
